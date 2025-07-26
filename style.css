@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e293b, #0f172a);
+}
+
+.quote-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00bcd4;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+.timer-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 5px;
+  background-color: #00bcd4;
+  animation: timerFill 15s linear infinite;
+}
+
+@keyframes timerFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.clock-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00bcd4;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+}
+
+.analog-clock {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  border: 3px solid #00bcd4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: #00bcd4;
+  top: 50%;
+  transform-origin: 100%;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.hand.second {
+  background: #ff4081;
+}
